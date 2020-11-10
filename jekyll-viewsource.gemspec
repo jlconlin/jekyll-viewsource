@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_runtime_dependency "jekyll", "~> 3.0"
+  spec.add_runtime_dependency "jekyll", "> 4.0"
   spec.add_runtime_dependency "htmlbeautifier", "~> 1.3"
   rouge_versions = ENV["ROUGE_VERSION"] ? ["~> #{ENV["ROUGE_VERSION"]}"] : [">= 1.7", "< 3"]
   spec.add_runtime_dependency("rouge", *rouge_versions)
